@@ -6,9 +6,9 @@ Explica os benefícios da nuvem, como escalabilidade, elasticidade, pagamento so
 Introduz a AWS como uma das principais provedoras de serviços em nuvem do mundo.
 
 ### 2. Fundamentos Essenciais da Infraestrutura AWS
-o	IaaS: Infraestrutura como serviço – Ex: VM (Máquina virtual)
-o	PaaS: Plataforma como Serviço – Ex: WebApp; DBs
-o	SaaS: Software como Serviço – ex: Netflix
+- IaaS: Infraestrutura como serviço – Ex: VM (Máquina virtual)
+- PaaS: Plataforma como Serviço – Ex: WebApp; DBs
+-	SaaS: Software como Serviço – ex: Netflix
 Aborda os principais serviços da AWS: EC2 (computação), S3 (armazenamento), RDS (banco de dados), entre outros.
 Explica conceitos como regiões, zonas de disponibilidade e arquitetura global da AWS.
 
@@ -20,4 +20,5 @@ Introduz boas práticas de segurança, como uso de MFA (autenticação multifato
 Demonstra como acessar a AWS via Console, CLI e SDKs.
 Apresenta ferramentas de controle de custos como o AWS Budgets e o Cost Explorer.
 Reforça a importância de monitorar e otimizar o uso para evitar surpresas na fatura.
+
 
