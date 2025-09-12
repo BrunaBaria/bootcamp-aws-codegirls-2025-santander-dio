@@ -145,7 +145,7 @@ Em **Permissions → Edit policy → Add statement**, adicione a seguinte polít
 
 ---
 
-# ⚡ Criando sua Primeira Função com Amazon Lambda
+# Criando sua Primeira Função com Amazon Lambda
 
 ## O que é Serverless?
 Paradigma onde **não é necessário servidor** para gerenciar aplicações.  
@@ -198,5 +198,6 @@ Paradigma onde **não é necessário servidor** para gerenciar aplicações.
 - Ao enviar arquivo ao bucket → Lambda será disparada  
 
 ---
+
 
 
