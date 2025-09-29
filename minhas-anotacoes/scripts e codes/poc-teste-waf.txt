@@ -1,0 +1,144 @@
+### **Prova de Conceito (PoC) Simples para Testar o AWS WAF**
+
+POC para testar o recurso contra ataques dos WAF
+
+---
+
+### **Arquitetura BÃ¡sica da PoC**
+- **ServiÃ§os Utilizados**:
+  - AWS WAF
+  - Amazon CloudFront (CDN para simular um site)
+  - Um bucket S3 configurado como **static website hosting** (para servir conteÃºdo estÃ¡tico atravÃ©s do CloudFront)
+
+---
+
+### **Passo a Passo para ImplementaÃ§Ã£o**
+
+#### 1. **Configurar um Bucket S3 com Hospedagem de Site**
+1. Acesse o console do **Amazon S3**.
+2. Crie um bucket e ative a opÃ§Ã£o "Static Website Hosting".
+3. Carregue um arquivo HTML bÃ¡sico (ex.: `index.html` com a mensagem "Este Ã© um site protegido pelo AWS WAF").
+
+#### 2. **Criar uma DistribuiÃ§Ã£o do Amazon CloudFront**
+1. No console do **Amazon CloudFront**, crie uma nova distribuiÃ§Ã£o.
+2. Configure o bucket S3 como a origem.
+3. Use as configuraÃ§Ãµes padrÃ£o para a distribuiÃ§Ã£o.
+
+#### 3. **Configurar o AWS WAF**
+1. Acesse o console do **AWS WAF** e crie uma **Web ACL** (Access Control List).
+2. **Adicionar Regras ao WAF**:
+   - **Regra 1: Bloquear um IP EspecÃ­fico**:
+     - Adicione uma regra para bloquear um endereÃ§o IP (ex.: seu IP local ou um IP falso para testar).
+     - Escolha a aÃ§Ã£o "Block".
+   - **Regra 2: Detectar Strings Maliciosas (Ex.: Ataques SQL)**:
+     - Adicione uma regra gerenciada pela AWS (ex.: `AWSManagedRulesSQLiRuleSet`) para bloquear tentativas de injeÃ§Ã£o SQL.
+     - Escolha a aÃ§Ã£o "Block".
+3. Associe a Web ACL Ã  distribuiÃ§Ã£o CloudFront.
+
+#### 4. **Testar o WAF**
+- **Teste 1**: Acesse o site usando o IP bloqueado para verificar se a regra estÃ¡ funcionando.
+- **Teste 2**: Envie uma solicitaÃ§Ã£o com uma string maliciosa, como `SELECT * FROM users`, para verificar se o WAF bloqueia a solicitaÃ§Ã£o.
+
+---
+
+### **Estimativa de Custo**
+1. **AWS WAF**:
+   - **Web ACL**: $5 por Web ACL.
+   - **Regras Gerenciadas**: $1 por regra gerenciada.
+   - **SolicitaÃ§Ãµes Inspecionadas**: $0.60 por milhÃ£o de solicitaÃ§Ãµes.
+   - **Custo estimado**: Se vocÃª gerar 100 mil requisiÃ§Ãµes para teste, o custo seria **~$5.06**.
+
+2. **Amazon CloudFront**:
+   - **DistribuiÃ§Ã£o**: Os primeiros 1 TB de transferÃªncia de dados estÃ£o no **free tier**.
+   - **Custo estimado**: Provavelmente **$0** dentro do limite gratuito.
+
+3. **Amazon S3**:
+   - **Armazenamento de arquivos**: O custo serÃ¡ insignificante para um Ãºnico arquivo HTML.
+   - **Custo estimado**: **~$0.01** (dependendo do uso).
+
+**Custo total estimado para 1 mÃªs de testes: ~$5.07**.
+
+---
+
+### **ObservaÃ§Ãµes**
+- Para manter os custos baixos, exclua os recursos (WAF, CloudFront, e S3) apÃ³s o teste.
+- Utilize o **AWS Free Tier** se estiver dentro dos limites (1 TB de CloudFront e 1 milhÃ£o de solicitaÃ§Ãµes no WAF no primeiro ano).
+
+
+Como testar
+### **Como realizar os testes da PoC do AWS WAF?**
+
+Aqui estÃ¡ o passo a passo para executar os **dois testes** propostos usando o seu prÃ³prio IP e simulando um ataque de injeÃ§Ã£o SQL.
+
+---
+
+### **Teste 1: Bloquear Acesso ao Seu PrÃ³prio IP**
+
+#### **1. Descubra o Seu EndereÃ§o IP PÃºblico**
+- Acesse [https://whatismyipaddress.com/](https://whatismyipaddress.com/) ou pesquise "What is my IP" no Google para descobrir o seu **IP pÃºblico**.
+
+#### **2. Configure a Regra do WAF**
+1. No console do **AWS WAF**:
+   - Abra a Web ACL criada.
+   - Adicione uma nova **regra personalizada**:
+     - Nome: "Block My IP".
+     - Tipo de regra: **IP Set**.
+   - Crie um **IP Set** e insira o seu **endereÃ§o IP pÃºblico** (em formato CIDR, ex.: `203.0.113.0/32` para bloquear um Ãºnico IP).
+   - AÃ§Ã£o: **Block**.
+2. Associe a regra Ã  Web ACL.
+
+#### **3. Teste o Bloqueio**
+- Abra o navegador e acesse o domÃ­nio da distribuiÃ§Ã£o **CloudFront** associado Ã  Web ACL (ex.: `https://d1234abcd.cloudfront.net`).
+- O AWS WAF deve bloquear sua solicitaÃ§Ã£o, e vocÃª verÃ¡ uma mensagem de erro padrÃ£o do CloudFront, como **403 - Forbidden**.
+
+---
+
+### **Teste 2: Simular Ataques de SQL Injection**
+
+#### **1. Configurar a Regra de DetecÃ§Ã£o de SQL Injection**
+1. No console do **AWS WAF**:
+   - Abra a Web ACL.
+   - Adicione uma **regra gerenciada**:
+     - Escolha o conjunto de regras: **AWSManagedRulesSQLiRuleSet**.
+     - AÃ§Ã£o: **Block**.
+2. Salve a configuraÃ§Ã£o.
+
+#### **2. Enviar uma SolicitaÃ§Ã£o com String Maliciosa**
+Existem vÃ¡rias maneiras de simular uma solicitaÃ§Ã£o com strings maliciosas:
+
+##### **MÃ©todo 1: Usando o Navegador**
+- Acesse o site CloudFront e adicione a seguinte string ao final da URL:
+  ```
+  https://d1234abcd.cloudfront.net/?query=SELECT * FROM users
+  ```
+- Como a regra de SQLi (SQL Injection) foi ativada, o WAF deve bloquear essa solicitaÃ§Ã£o e retornar um erro **403 - Forbidden**.
+
+##### **MÃ©todo 2: Usando cURL (via Terminal ou Prompt de Comando)**
+- Execute o seguinte comando no terminal (substitua `d1234abcd.cloudfront.net` pelo domÃ­nio da sua distribuiÃ§Ã£o CloudFront):
+  ```bash
+  curl "https://d1234abcd.cloudfront.net/?query=SELECT * FROM users"
+  ```
+- O WAF deve bloquear a solicitaÃ§Ã£o e retornar o erro **403**.
+
+##### **MÃ©todo 3: Usando Postman**
+1. Abra o **Postman** ou qualquer ferramenta similar.
+2. Crie uma nova solicitaÃ§Ã£o do tipo **GET**.
+3. Defina a URL como:
+   ```
+   https://d1234abcd.cloudfront.net/?query=SELECT * FROM users
+   ```
+4. Clique em **Send**. O WAF deve bloquear a solicitaÃ§Ã£o.
+
+---
+
+### **ValidaÃ§Ã£o dos Testes**
+- **Teste 1**: Ao acessar com o seu IP bloqueado, vocÃª verÃ¡ um erro **403**.
+- **Teste 2**: Ao enviar a string maliciosa (`SELECT * FROM users`), o WAF deve bloquear a solicitaÃ§Ã£o automaticamente.
+
+---
+
+### **Ferramentas para Evitar Abusos**
+- NÃ£o use ataques reais em sistemas de terceiros; limite-se ao domÃ­nio da sua PoC.
+- Para testar sem impacto indevido, utilize as regras **gerenciadas pelo AWS WAF**, que sÃ£o seguras e feitas para simulaÃ§Ãµes controladas.
+
+Isso garantirÃ¡ que sua PoC seja funcional e segura!
