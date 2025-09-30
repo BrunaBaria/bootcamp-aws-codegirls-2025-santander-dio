@@ -3,7 +3,7 @@ O ideal é criar grupos de usuários No IAM Ideteinty Center, para deixar o usu�
 
 Nesse laboratório vamos trabalhar com usuário root. No mundo real, isole o usuário root por segurança e boas práticas.
 
-* Consulte os prints das etapas nos diretórios correspondentes *
+* Consulte os prints das etapas nos diretórios correspondentes 
 
 ### IAM - Criar Usuário e Grupo de Usuários pela Console - sem Identity Center
 - Criar usuário
