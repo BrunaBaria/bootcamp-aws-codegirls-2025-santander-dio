@@ -68,6 +68,7 @@ Agora precisamos criar a chave de acesso desse usuário para utilizar no CLI:
 
 Na sua máquina:
 - Prepare seu ambiente instalando o SDk da AWS com:
+- Eu utilizei o git bash
     - verifique se está isntalado com `aws --version`
     - ou instale aws config
     - logue na AWS pelo terminal `aws configure`
