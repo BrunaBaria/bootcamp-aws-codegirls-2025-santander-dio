@@ -1,5 +1,5 @@
 # Trabalhando com a AWS
-----
+
 Nesta coleção de pastas, vou disponibilizar etapas de hands-on concluídas na console da AWS, bem como imagens que comprovam as práticas.
 Abaixo segue a lista das atividades realizadas e praticadas nos laboratórios
 --- 
