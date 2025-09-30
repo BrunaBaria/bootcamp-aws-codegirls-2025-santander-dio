@@ -23,7 +23,7 @@ obs 1: Caso o usuário esteja sem acessos, certifique-se que o usuário foi real
 obs 2: habilite o MFA para seus usuários cadastrados, por segurança
 
 ### IAM - Criar Usuário e Grupo de Usuários pelo CLI
-A partir do usuário administrador, vamos criar os demais usuarios, grupos, etc. 
+A partir do usuário administrador, vamos criar os demais usuarios, grupos, etc. Logue com usuários "administrador".
 Esse usuário precisa de uma política específica para essa adminsitração. Vamos criá-la primeiro:
 - Acesse "IAM", "Usuário", "administrador"
 - "adicionar permissões", "criar política em linha"
