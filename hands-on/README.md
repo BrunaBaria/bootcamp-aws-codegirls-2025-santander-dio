@@ -9,5 +9,17 @@ Abaixo segue a lista das atividades realizadas e praticadas nos laboratórios
 1) Cadastrar o MFA
 2) Cadastrar limite de custos no 'Billing and Cost Management' 
 3) IAM - cadastro de usuários, grupos de usuários e politicas
-4) S3 - Criar um S3, adicionar uma URL para acesso externo com um modelo de site-portifólio
+4) Desafio 1- Desing de arquitetura
+5) EC2 - Criando a primeria Instância
+6) S3 - Criar um S3
+7) Desafio 2 - adicionar uma URL para acesso externo com um modelo de site-portifólio
+8) Lambda
+9) Redes
+10) Banco de Dados
+11) Armazenamento e CDN
+12) Desafio 3 - Workflow Automaizado com AWS Step Function
+13) CloudWatch
+14) Desafio 4 - Primeira Stack com CloudFormation
+15) Desafio 5 - Tarefas automatizadas com Lambda e S3
+16) Desafio 6 - Criar um ambiente com Terraform 
 

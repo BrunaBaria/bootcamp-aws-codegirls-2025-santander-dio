@@ -69,7 +69,7 @@ Agora precisamos criar a chave de acesso desse usuário para utilizar no CLI:
 - Criar a chave e SALVAR a chave e a senha, pois não será possivel recuperá-la posteriormente!
 
 Na sua máquina:
-- Prepare seu ambiente instalando o AWS CLI(https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html):
+- Prepare seu ambiente instalando o [AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html):
     - verifique se está isntalado com `aws --version`
     - logue na AWS pelo terminal `aws configure`
     - Insira o ID, a Acess Key criada, a regiao e o formato de saída json
