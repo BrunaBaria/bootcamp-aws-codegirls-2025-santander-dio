@@ -25,6 +25,7 @@ obs 2: habilite o MFA para seus usuários cadastrados, por segurança
 
 ### IAM - Criar Usuário e Grupo de Usuários pelo CLI
 A partir do usuário administrador, vamos criar os demais usuarios, grupos, etc. Logue com usuários "administrador".
+
 Esse usuário precisa de uma política específica para essa adminsitração. Vamos criá-la primeiro:
 - Acesse "IAM", "Usuário", "administrador"
 - "adicionar permissões", "criar política em linha"
@@ -68,10 +69,8 @@ Agora precisamos criar a chave de acesso desse usuário para utilizar no CLI:
 - Criar a chave e SALVAR a chave e a senha, pois não será possivel recuperá-la posteriormente!
 
 Na sua máquina:
-- Prepare seu ambiente instalando o SDk da AWS com:
-- Eu utilizei o git bash
+- Prepare seu ambiente instalando o AWS CLI(https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html):
     - verifique se está isntalado com `aws --version`
-    - ou instale aws config
     - logue na AWS pelo terminal `aws configure`
     - Insira o ID, a Acess Key criada, a regiao e o formato de saída json
 - Crie um arquivo .csv com "nome, grupo, senha", chamado "usuario.csv"
