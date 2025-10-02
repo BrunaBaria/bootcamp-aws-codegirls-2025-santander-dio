@@ -14,6 +14,8 @@ Este repositório foi criado para armazenar os arquivos de estudos e desafios do
 * [VS Code](https://code.visualstudio.com/docs/setup/setup-overview)
 * [AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html)
 * [Terraform](https://developer.hashicorp.com/terraform/tutorials/aws-get-started/install-cli)
+* [MobaXTerm](https://mobaxterm.mobatek.net/download.html)
+* [Git](https://git-scm.com/downloads) - esse eu tenho certeza que você já tem! mas vou deixar o link mesmo assim.
 
 ## Contribuições
 

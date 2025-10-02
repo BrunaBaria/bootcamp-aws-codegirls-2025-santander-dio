@@ -5,6 +5,10 @@ O ideal é criar grupos de usuários no IAM Ideteinty Center, para deixar o usu�
 
 Nesse laboratório vamos trabalhar com usuário root. No mundo real, isole o usuário root por segurança e boas práticas.
 
+## Pré-requisitos desa etapa
+- Prepare seu ambiente instalando o [AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html) caso ainda não tenha instalado
+
+
 ### 1) IAM - Criar Usuário e Grupo de Usuários pela Console - sem Identity Center
 - Acesse "IAM" -> "Usuário -><img width="1407" height="1031" alr="2-cost-alert" src = "https://github.com/BrunaBaria/bootcamp-aws-codegirls-2025-santander-dio/blob/main/hands-on/03-IAM/img/01-user.png">
 - "Criar usuário" -> 
@@ -27,6 +31,8 @@ obs 2: habilite o MFA para seus usuários cadastrados, por segurança
 
 ### 2) IAM - Criar Usuário e Grupo de Usuários pelo CLI
 A partir do usuário administrador, vamos criar os demais usuarios, grupos, etc. Logue com usuários "administrador".
+
+#### Política específica
 
 Esse usuário precisa de uma política específica para essa adminsitração. Vamos criá-la primeiro:
 - Acesse "IAM" -> "Usuário" -> "administrador"<img width="1407" height="1031" alr="2-cost-alert" src = "https://github.com/BrunaBaria/bootcamp-aws-codegirls-2025-santander-dio/blob/main/hands-on/03-IAM/img/11-keysSecret.png">
@@ -62,18 +68,17 @@ Esse usuário precisa de uma política específica para essa adminsitração. Va
 	]
 }
 ```
-
+#### Chaves de Acesso
 Agora precisamos criar a chave de acesso desse usuário para utilizar no CLI:
 - Acesse novamente "Usuários" -> "administrador"
 - "Criar chave de acesso" -><img width="1407" height="1031" alr="2-cost-alert" src = "https://github.com/BrunaBaria/bootcamp-aws-codegirls-2025-santander-dio/blob/main/hands-on/03-IAM/img/12-keysSecret.png">
 - "CLI" -><img width="1407" height="1031" alr="2-cost-alert" src = "https://github.com/BrunaBaria/bootcamp-aws-codegirls-2025-santander-dio/blob/main/hands-on/03-IAM/img/13-keysSecret.png">
 - Criar a chave e SALVAR a chave e a senha, pois não será possivel recuperá-la posteriormente!<img width="1407" height="1031" alr="2-cost-alert" src = "https://github.com/BrunaBaria/bootcamp-aws-codegirls-2025-santander-dio/blob/main/hands-on/03-IAM/img/14-keysSecret.png">
 
-Na sua máquina:
-- Prepare seu ambiente instalando o [AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html) caso ainda não tenha instalado:
-    - verifique se está instalado com `aws --version`
-    - logue na AWS pelo terminal `aws configure`
-    - Insira a Key ID, a Secret key criada, a região ` us-east-2 ` e o formato de saída ` json ` -> <img width="1407" height="1031" alr="2-cost-alert" src = "https://github.com/BrunaBaria/bootcamp-aws-codegirls-2025-santander-dio/blob/main/hands-on/03-IAM/img/15-cli.png">
+#### Na sua máquina:
+- verifique se está instalado com `aws --version`
+- logue na AWS pelo terminal `aws configure`
+- Insira a Key ID, a Secret key criada, a região ` us-east-2 ` e o formato de saída ` json ` -> <img width="1407" height="1031" alr="2-cost-alert" src = "https://github.com/BrunaBaria/bootcamp-aws-codegirls-2025-santander-dio/blob/main/hands-on/03-IAM/img/15-cli.png">
 - Crie um arquivo .csv com "nome, grupo, senha", chamado [usuario.csv](https://github.com/BrunaBaria/bootcamp-aws-codegirls-2025-santander-dio/blob/main/hands-on/03-IAM/usuarios.csv)
 - rode o script disponível nesse diretório com [./scriptIAM.sh](https://github.com/BrunaBaria/bootcamp-aws-codegirls-2025-santander-dio/blob/main/hands-on/03-IAM/scriptIAM.sh)
 - Na console AWS vai aparecer os grupos e usuários criados<img width="1407" height="1031" alr="2-cost-alert" src = "https://github.com/BrunaBaria/bootcamp-aws-codegirls-2025-santander-dio/blob/main/hands-on/03-IAM/img/18-gruposCriados.png"><img width="1407" height="1031" alr="2-cost-alert" src = "https://github.com/BrunaBaria/bootcamp-aws-codegirls-2025-santander-dio/blob/main/hands-on/03-IAM/img/19-usuariosCriados.png">
