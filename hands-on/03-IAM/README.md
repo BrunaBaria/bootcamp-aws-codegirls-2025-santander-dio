@@ -29,7 +29,7 @@ obs 2: habilite o MFA para seus usuários cadastrados, por segurança
 A partir do usuário administrador, vamos criar os demais usuarios, grupos, etc. Logue com usuários "administrador".
 
 Esse usuário precisa de uma política específica para essa adminsitração. Vamos criá-la primeiro:
-- Acesse "IAM" -> "Usuário" -> "administrador"<img width="1407" height="1031" alr="2-cost-alert" src = "https://github.com/BrunaBaria/bootcamp-aws-codegirls-2025-santander-dio/blob/main/hands-on/03-IAM/img/11-keySecret.png">
+- Acesse "IAM" -> "Usuário" -> "administrador"<img width="1407" height="1031" alr="2-cost-alert" src = "https://github.com/BrunaBaria/bootcamp-aws-codegirls-2025-santander-dio/blob/main/hands-on/03-IAM/img/11-keysSecret.png">
 - "adicionar permissões" ->"criar política em linha"<img width="1407" height="1031" alr="2-cost-alert" src = "https://github.com/BrunaBaria/bootcamp-aws-codegirls-2025-santander-dio/blob/main/hands-on/03-IAM/img/16-criando-politica.png">
 - Escreva o .json abaixo, dê o nome da sua política de "AllowUserAndGroupManagement" e criar
 ```
@@ -65,9 +65,9 @@ Esse usuário precisa de uma política específica para essa adminsitração. Va
 
 Agora precisamos criar a chave de acesso desse usuário para utilizar no CLI:
 - Acesse novamente "Usuários" -> "administrador"
-- "Criar chave de acesso" -><img width="1407" height="1031" alr="2-cost-alert" src = "https://github.com/BrunaBaria/bootcamp-aws-codegirls-2025-santander-dio/blob/main/hands-on/03-IAM/img/12-keySecret.png">
-- "CLI" -><img width="1407" height="1031" alr="2-cost-alert" src = "https://github.com/BrunaBaria/bootcamp-aws-codegirls-2025-santander-dio/blob/main/hands-on/03-IAM/img/13-keySecret.png">
-- Criar a chave e SALVAR a chave e a senha, pois não será possivel recuperá-la posteriormente!<img width="1407" height="1031" alr="2-cost-alert" src = "https://github.com/BrunaBaria/bootcamp-aws-codegirls-2025-santander-dio/blob/main/hands-on/03-IAM/img/14-keySecret.png">
+- "Criar chave de acesso" -><img width="1407" height="1031" alr="2-cost-alert" src = "https://github.com/BrunaBaria/bootcamp-aws-codegirls-2025-santander-dio/blob/main/hands-on/03-IAM/img/12-keysSecret.png">
+- "CLI" -><img width="1407" height="1031" alr="2-cost-alert" src = "https://github.com/BrunaBaria/bootcamp-aws-codegirls-2025-santander-dio/blob/main/hands-on/03-IAM/img/13-keysSecret.png">
+- Criar a chave e SALVAR a chave e a senha, pois não será possivel recuperá-la posteriormente!<img width="1407" height="1031" alr="2-cost-alert" src = "https://github.com/BrunaBaria/bootcamp-aws-codegirls-2025-santander-dio/blob/main/hands-on/03-IAM/img/14-keysSecret.png">
 
 Na sua máquina:
 - Prepare seu ambiente instalando o [AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html) caso ainda não tenha instalado:
