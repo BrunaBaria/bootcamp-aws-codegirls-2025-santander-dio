@@ -11,10 +11,10 @@ Vamos fazer este dinheiro render até o fim da prática!
     - "Criar orçamento" ->
     - "Personalizar" ->    
     - "Orçamento de custos - Recomendado" ->    
-<img width="1407" height="1031" alr="1-cost-alert" src = "https://github.com/BrunaBaria/bootcamp-aws-codegirls-2025-santander-dio/blob/main/hands-on/02-alerta-de-custos/02-alerta-de-custos/1-cost-alert.png">
+<img width="1407" height="1031" alr="1-cost-alert" src = "https://github.com/BrunaBaria/bootcamp-aws-codegirls-2025-santander-dio/blob/main/hands-on/02-alerta-de-custos/img/1-cost-alert.png">
     - "Definir um orçamento" ->
     - Escolha um nome para seu orçamento `aws-practitioner-studies`->
-<img width="1407" height="1031" alr="2-cost-alert" src = "https://github.com/BrunaBaria/bootcamp-aws-codegirls-2025-santander-dio/blob/main/hands-on/02-alerta-de-custos/02-alerta-de-custos/2-cost-alert.png">
+<img width="1407" height="1031" alr="2-cost-alert" src = "https://github.com/BrunaBaria/bootcamp-aws-codegirls-2025-santander-dio/blob/main/hands-on/02-alerta-de-custos/img/2-cost-alert.png">
     - Em "Definir valor do orçamento" escolha o período desejado -> 
     - "Diário"
     - Em "Tipo de renovação do orçamento" escolha a recorrência desse orçamento ->
@@ -27,4 +27,4 @@ Vamos fazer este dinheiro render até o fim da prática!
     - "0.01" - vamos escolher o mínimo possivel para ativar o alerta
     - Em "Escopo do orçamento" ->
     - "Todos os serviços da AWS" 
-<img width="1407" height="1031" alr="2-cost-alert" src = "https://github.com/BrunaBaria/bootcamp-aws-codegirls-2025-santander-dio/blob/main/hands-on/02-alerta-de-custos/02-alerta-de-custos/3-cost-alert.png">
+<img width="1407" height="1031" alr="2-cost-alert" src = "https://github.com/BrunaBaria/bootcamp-aws-codegirls-2025-santander-dio/blob/main/hands-on/02-alerta-de-custos/img/3-cost-alert.png">
