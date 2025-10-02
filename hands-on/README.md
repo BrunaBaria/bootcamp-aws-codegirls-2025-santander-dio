@@ -1,9 +1,9 @@
-# Trabalhando com a AWS
+## Trabalhando com a AWS
 --- 
 Nesta coleção de pastas, vou disponibilizar etapas de hands-on concluídas na console da AWS, bem como imagens que comprovam as práticas.
 Abaixo segue a lista das atividades realizadas e praticadas nos laboratórios
 ---
-## O que faremos?
+### O que faremos?
 
 0) Criar a Conta na AWS
 1) Cadastrar o MFA
