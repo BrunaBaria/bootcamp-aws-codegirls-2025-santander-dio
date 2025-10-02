@@ -1,24 +1,26 @@
 ##  IAM
-O ideal é criar grupos de usuários No IAM Ideteinty Center, para deixar o usuário root isolado, inserir os usuários e atribuir politicas e permissões ao grupo. Não faremos isso neste momento pois ao utilizar essa funcionalidade a conta de uso free é suspensa e perderiamos os créditos para testes.
+O IAM é a parte da AWS que lida com gerenciamento de identidades, de usuários, grupos, políticas,etc.
+
+O ideal é criar grupos de usuários no IAM Ideteinty Center, para deixar o usuário root isolado, inserir os usuários e atribuir políticas e permissões ao grupo. Não faremos isso neste momento pois ao utilizar essa funcionalidade a conta de uso free é suspensa e perderiamos os créditos para testes.
 
 Nesse laboratório vamos trabalhar com usuário root. No mundo real, isole o usuário root por segurança e boas práticas.
 
-* Consulte os prints das etapas nos diretórios correspondentes 
-
 ### IAM - Criar Usuário e Grupo de Usuários pela Console - sem Identity Center
-- Criar usuário
-- nome do usuário
+- Acesse "IAM" -> "Usuário -><img width="1407" height="1031" alr="2-cost-alert" src = "https://github.com/BrunaBaria/bootcamp-aws-codegirls-2025-santander-dio/blob/main/hands-on/03-IAM/img/01-user.png">
+- "Criar usuário" -> 
+- "Nome do usuário" - ` adminstrador ` ->
 - marque "Fornecer acesso para os usuários ao Console de Gerenciamento da AWS - opcional"
-- marque "Quero criar um usuário do IAM"
-- Crie um senha personalisada
-- marque "Os usuários devem criar uma nova senha na próxima sessão (recomendado)."
-- Próximo
-- "criar grupo"
-- Dê um nome para o grupo e atribua uma política à ele (AdministratorAccess-Amplify)
-- "Criar grupo de usuário"
-- Adicionar usuário ao grupo
-- Revisar e criar
-- acesse a URL gerada e logue com o usuário criado
+- marque "Quero criar um usuário do IAM" ->
+- Crie um senha personalisada ->
+- marque "Os usuários devem criar uma nova senha na próxima sessão (recomendado)." ->
+- "Próximo" -><img width="1407" height="1031" alr="2-cost-alert" src = "https://github.com/BrunaBaria/bootcamp-aws-codegirls-2025-santander-dio/blob/main/hands-on/03-IAM/img/02-user.png">
+- Em "Definir permissões" -> "Criar Grupo" caso você não tenha grupos criados ainda.<img width="1407" height="1031" alr="2-cost-alert" src = "https://github.com/BrunaBaria/bootcamp-aws-codegirls-2025-santander-dio/blob/main/hands-on/03-IAM/img/03-user.png">
+- Dê um nome para o grupo e atribua uma política à ele ` AdministratorAccess-Amplify`<img width="1407" height="1031" alr="2-cost-alert" src = "https://github.com/BrunaBaria/bootcamp-aws-codegirls-2025-santander-dio/blob/main/hands-on/03-IAM/img/04-user.png">
+- "Criar grupo de usuário"<img width="1407" height="1031" alr="2-cost-alert" src = "https://github.com/BrunaBaria/bootcamp-aws-codegirls-2025-santander-dio/blob/main/hands-on/03-IAM/img/05-user.png">
+- Revisar e criar<img width="1407" height="1031" alr="2-cost-alert" src = "https://github.com/BrunaBaria/bootcamp-aws-codegirls-2025-santander-dio/blob/main/hands-on/03-IAM/img/06-user.png">
+- Usuário criado com exito!-> <img width="1407" height="1031" alr="2-cost-alert" src = "https://github.com/BrunaBaria/bootcamp-aws-codegirls-2025-santander-dio/blob/main/hands-on/03-IAM/img/07-user.png">
+- Adicionar usuário ao grupo -><img width="1407" height="1031" alr="2-cost-alert" src = "https://github.com/BrunaBaria/bootcamp-aws-codegirls-2025-santander-dio/blob/main/hands-on/03-IAM/img/10-user.png">
+- acesse a URL gerada e logue com o usuário criado -><img width="1407" height="1031" alr="2-cost-alert" src = "https://github.com/BrunaBaria/bootcamp-aws-codegirls-2025-santander-dio/blob/main/hands-on/03-IAM/img/08-user.png"><img width="1407" height="1031" alr="2-cost-alert" src = "https://github.com/BrunaBaria/bootcamp-aws-codegirls-2025-santander-dio/blob/main/hands-on/03-IAM/img/09-user.png">
 
 obs 1: Caso o usuário esteja sem acessos, certifique-se que o usuário foi realmente atribuido ao grupo com as permissões
 obs 2: habilite o MFA para seus usuários cadastrados, por segurança
