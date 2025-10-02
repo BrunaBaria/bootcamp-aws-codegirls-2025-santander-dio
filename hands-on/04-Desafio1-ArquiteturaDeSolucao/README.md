@@ -10,3 +10,7 @@ Eu optei por desenha uma solução de S3 + Lambda Function.
 3) Que envia o arquivo para o armazenamento no S3;
 4) Ao armazenar o arquivo, um gatilho aciona um Lambda Function que identifica se o arquivo é um.xlsx;
 5) Se for um .xlsx, outro lambda lê os dados e envia para o banco de dados;
+6) O Dynamo DB recebe e armazena os dados;
+7) Ao finalizar, aciona um gatilho do Lambda Function para informar ao usuário;
+8) Esse gatilho aciona um SNS para enviar a notificação para o email do usuário;
+9) O usuário recebe a notificação de sucesso ou falha;

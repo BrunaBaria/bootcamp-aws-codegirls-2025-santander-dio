@@ -9,7 +9,7 @@ Abaixo segue a lista das atividades realizadas e praticadas nos laboratórios
 1) Cadastrar o MFA
 2) Cadastrar limite de custos no 'Billing and Cost Management' 
 3) IAM - cadastro de usuários, grupos de usuários e politicas
-4) Desafio 1- Desing de arquitetura
+4) Desafio 1- Arquitetura de Solução
 5) EC2 - Criando a primeria Instância
 6) S3 - Criar um S3
 7) Desafio 2 - adicionar uma URL para acesso externo com um modelo de site-portifólio
