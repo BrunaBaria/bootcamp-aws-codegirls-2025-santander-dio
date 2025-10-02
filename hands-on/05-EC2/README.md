@@ -30,9 +30,16 @@ Um EC2 é uma máquina virtual na AWS. Assim com um computador de mesa, um noteb
 - No Moba escolha "session" -> "SSH" -> "Advanced SSH Settings" ->
 - Em "Remote host" coloque o ip publico da sua instância ->
 - Em usename coloque o padrão da instância "ec2-user" -> 
-- "Use private key" -> carregue o .pem abixado -><img width="1407" height="1031" alr="2-cost-alert" src = "https://github.com/BrunaBaria/bootcamp-aws-codegirls-2025-santander-dio/blob/main/hands-on/05-EC2/img/11-ec2.png">
+- "Use private key" -> carregue o .pem baixado -><img width="1407" height="1031" alr="2-cost-alert" src = "https://github.com/BrunaBaria/bootcamp-aws-codegirls-2025-santander-dio/blob/main/hands-on/05-EC2/img/11-ec2.png">
 - Conecte com Moba -> Estamos dentro da máquina via Moba!<img width="1407" height="1031" alr="2-cost-alert" src = "https://github.com/BrunaBaria/bootcamp-aws-codegirls-2025-santander-dio/blob/main/hands-on/05-EC2/img/12-ec2.png">
 
 
 ## Conexão Windows via RDP 
+- Vá até sua instância criada de windows -> "Conection"
+- Baixe o "Remote Desktop" -> <img width="1407" height="1031" alr="2-cost-alert" src = "https://github.com/BrunaBaria/bootcamp-aws-codegirls-2025-santander-dio/blob/main/hands-on/05-EC2/img/13-ec2.png">
+- Acesse "Gerar senha" -> Carregue o arquivo .pem -> Desemcripte a senha -><img width="1407" height="1031" alr="2-cost-alert" src = "https://github.com/BrunaBaria/bootcamp-aws-codegirls-2025-santander-dio/blob/main/hands-on/05-EC2/img/14-ec2.png">
+- Acesse o Remote Desktop baixado e coloque a senha ->
+- Estamos dentro da instância windows!<img width="1407" height="1031" alr="2-cost-alert" src = "https://github.com/BrunaBaria/bootcamp-aws-codegirls-2025-santander-dio/blob/main/hands-on/05-EC2/img/15-ec2.png">
 
+## Limpe o lab após finalizar seus estudos
+- Delete as instâncias <img width="1407" height="1031" alr="2-cost-alert" src = "https://github.com/BrunaBaria/bootcamp-aws-codegirls-2025-santander-dio/blob/main/hands-on/05-EC2/img/delete-ec2.png">
