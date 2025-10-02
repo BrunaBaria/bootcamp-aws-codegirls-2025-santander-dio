@@ -10,11 +10,9 @@ Vamos fazer este dinheiro render até o fim da prática!
     - "Orçamentos" ->
     - "Criar orçamento" ->
     - "Personalizar" ->    
-    - "Orçamento de custos - Recomendado" ->    
+    - "Orçamento de custos - Recomendado" -><img width="1407" height="1031" alr="1-cost-alert" src = "https://github.com/BrunaBaria/bootcamp-aws-codegirls-2025-santander-dio/blob/main/hands-on/02-alerta-de-custos/img/1-cost-alert.png">
 
-<img width="1407" height="1031" alr="1-cost-alert" src = "https://github.com/BrunaBaria/bootcamp-aws-codegirls-2025-santander-dio/blob/main/hands-on/02-alerta-de-custos/img/1-cost-alert.png">
-
-    * "Definir um orçamento" ->
+    - "Definir um orçamento" ->
     - Escolha um nome para seu orçamento `aws-practitioner-studies`->
 
 <img width="1407" height="1031" alr="2-cost-alert" src = "https://github.com/BrunaBaria/bootcamp-aws-codegirls-2025-santander-dio/blob/main/hands-on/02-alerta-de-custos/img/2-cost-alert.png">
