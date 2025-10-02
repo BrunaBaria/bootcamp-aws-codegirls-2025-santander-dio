@@ -11,7 +11,7 @@ Abaixo segue a lista das atividades realizadas e praticadas nos laboratórios
 3) IAM - cadastro de usuários, grupos de usuários e politicas
 4) Desafio 1- Arquitetura de Solução
 5) EC2 - Criando a primeria Instância
-6) S3 - Criar um S3
+6) S3 - Criar o primeiro S3
 7) Desafio 2 - adicionar uma URL para acesso externo com um modelo de site-portifólio
 8) Lambda
 9) Redes
