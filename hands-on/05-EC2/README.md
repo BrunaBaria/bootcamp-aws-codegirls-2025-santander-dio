@@ -21,7 +21,18 @@ Um EC2 é uma máquina virtual na AWS. Assim com um computador de mesa, um noteb
 - Marque "Permitir tráfego SSH" do SEU IP <img width="1407" height="1031" alr="2-cost-alert" src = "https://github.com/BrunaBaria/bootcamp-aws-codegirls-2025-santander-dio/blob/main/hands-on/05-EC2/img/06-ec2.png">
 - Não precisa alterar os itens avançados -><img width="1407" height="1031" alr="2-cost-alert" src = "https://github.com/BrunaBaria/bootcamp-aws-codegirls-2025-santander-dio/blob/main/hands-on/05-EC2/img/07-ec2.png">
 - Criar instância em "Instância de lançamento" -><img width="1407" height="1031" alr="2-cost-alert" src = "https://github.com/BrunaBaria/bootcamp-aws-codegirls-2025-santander-dio/blob/main/hands-on/05-EC2/img/08-ec2.png">
-- Intância criada -> <img width="1407" height="1031" alr="2-cost-alert" src = "https://github.com/BrunaBaria/bootcamp-aws-codegirls-2025-santander-dio/blob/main/hands-on/05-EC2/img/09-ec2.png">
+- Intância criada -> A partir de agora seus crédito serão consumidos<img width="1407" height="1031" alr="2-cost-alert" src = "https://github.com/BrunaBaria/bootcamp-aws-codegirls-2025-santander-dio/blob/main/hands-on/05-EC2/img/09-ec2.png">
+- Agora faça o mesmo, mas crie uma instância windows.
+    - Neste caso a porta é 3389 (RDP)
+
+## Conexão Linux via MobaXterm
+- Ao acessar sua instância, clique em "conect" para visualizar o ip público dela-><img width="1407" height="1031" alr="2-cost-alert" src = "https://github.com/BrunaBaria/bootcamp-aws-codegirls-2025-santander-dio/blob/main/hands-on/05-EC2/img/10-ec2.png">
+- No Moba escolha "session" -> "SSH" -> "Advanced SSH Settings" ->
+- Em "Remote host" coloque o ip publico da sua instância ->
+- Em usename coloque o padrão da instância "ec2-user" -> 
+- "Use private key" -> carregue o .pem abixado -><img width="1407" height="1031" alr="2-cost-alert" src = "https://github.com/BrunaBaria/bootcamp-aws-codegirls-2025-santander-dio/blob/main/hands-on/05-EC2/img/11-ec2.png">
+- Conecte com Moba -> Estamos dentro da máquina via Moba!<img width="1407" height="1031" alr="2-cost-alert" src = "https://github.com/BrunaBaria/bootcamp-aws-codegirls-2025-santander-dio/blob/main/hands-on/05-EC2/img/12-ec2.png">
 
 
+## Conexão Windows via RDP 
 
