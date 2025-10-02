@@ -35,9 +35,9 @@ Um EC2 é uma máquina virtual na AWS. Assim com um computador de mesa, um noteb
 
 
 ## Conexão Windows via RDP 
-- Vá até sua instância criada de windows -> "Conection"
+- Vá até sua instância criada de windows -> "Conect"
 - Baixe o "Remote Desktop" -> <img width="1407" height="1031" alr="2-cost-alert" src = "https://github.com/BrunaBaria/bootcamp-aws-codegirls-2025-santander-dio/blob/main/hands-on/05-EC2/img/13-ec2.png">
-- Acesse "Gerar senha" -> Carregue o arquivo .pem -> Desemcripte a senha -><img width="1407" height="1031" alr="2-cost-alert" src = "https://github.com/BrunaBaria/bootcamp-aws-codegirls-2025-santander-dio/blob/main/hands-on/05-EC2/img/14-ec2.png">
+- Acesse "Gerar senha" -> Carregue o arquivo .pem -> Desencripte a senha -><img width="1407" height="1031" alr="2-cost-alert" src = "https://github.com/BrunaBaria/bootcamp-aws-codegirls-2025-santander-dio/blob/main/hands-on/05-EC2/img/14-ec2.png">
 - Acesse o Remote Desktop baixado e coloque a senha ->
 - Estamos dentro da instância windows!<img width="1407" height="1031" alr="2-cost-alert" src = "https://github.com/BrunaBaria/bootcamp-aws-codegirls-2025-santander-dio/blob/main/hands-on/05-EC2/img/15-ec2.png">
 
