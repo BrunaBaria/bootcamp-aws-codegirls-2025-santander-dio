@@ -15,12 +15,12 @@ Nesse laboratório vamos trabalhar com usuário root. No mundo real, isole o usu
 - marque "Os usuários devem criar uma nova senha na próxima sessão (recomendado)." ->
 - "Próximo" -><img width="1407" height="1031" alr="2-cost-alert" src = "https://github.com/BrunaBaria/bootcamp-aws-codegirls-2025-santander-dio/blob/main/hands-on/03-IAM/img/02-user.png">
 - Em "Definir permissões" -> "Criar Grupo" caso você não tenha grupos criados ainda.<img width="1407" height="1031" alr="2-cost-alert" src = "https://github.com/BrunaBaria/bootcamp-aws-codegirls-2025-santander-dio/blob/main/hands-on/03-IAM/img/03-user.png">
-- Dê um nome para o grupo e atribua uma política à ele ` AdministratorAccess-Amplify`<img width="1407" height="1031" alr="2-cost-alert" src = "https://github.com/BrunaBaria/bootcamp-aws-codegirls-2025-santander-dio/blob/main/hands-on/03-IAM/img/04-user.png">
-- "Criar grupo de usuário"<img width="1407" height="1031" alr="2-cost-alert" src = "https://github.com/BrunaBaria/bootcamp-aws-codegirls-2025-santander-dio/blob/main/hands-on/03-IAM/img/05-user.png">
-- Revisar e criar<img width="1407" height="1031" alr="2-cost-alert" src = "https://github.com/BrunaBaria/bootcamp-aws-codegirls-2025-santander-dio/blob/main/hands-on/03-IAM/img/06-user.png">
-- Usuário criado com exito!-> <img width="1407" height="1031" alr="2-cost-alert" src = "https://github.com/BrunaBaria/bootcamp-aws-codegirls-2025-santander-dio/blob/main/hands-on/03-IAM/img/07-user.png">
-- Adicionar usuário ao grupo -><img width="1407" height="1031" alr="2-cost-alert" src = "https://github.com/BrunaBaria/bootcamp-aws-codegirls-2025-santander-dio/blob/main/hands-on/03-IAM/img/10-user.png">
-- acesse a URL gerada e logue com o usuário criado -><img width="1407" height="1031" alr="2-cost-alert" src = "https://github.com/BrunaBaria/bootcamp-aws-codegirls-2025-santander-dio/blob/main/hands-on/03-IAM/img/08-user.png"><img width="1407" height="1031" alr="2-cost-alert" src = "https://github.com/BrunaBaria/bootcamp-aws-codegirls-2025-santander-dio/blob/main/hands-on/03-IAM/img/09-user.png">
+- Dê um nome para o grupo e atribua uma política à ele ` AdministratorAccess-Amplify`<img width="1407" height="1031" alr="2-cost-alert" src = "https://github.com/BrunaBaria/bootcamp-aws-codegirls-2025-santander-dio/blob/main/hands-on/03-IAM/img/04-grupos.png">
+- "Criar grupo de usuário"<img width="1407" height="1031" alr="2-cost-alert" src = "https://github.com/BrunaBaria/bootcamp-aws-codegirls-2025-santander-dio/blob/main/hands-on/03-IAM/img/05-grupos.png">
+- Revisar e criar<img width="1407" height="1031" alr="2-cost-alert" src = "https://github.com/BrunaBaria/bootcamp-aws-codegirls-2025-santander-dio/blob/main/hands-on/03-IAM/img/06-grupos.png">
+- Usuário criado com exito!-> <img width="1407" height="1031" alr="2-cost-alert" src = "https://github.com/BrunaBaria/bootcamp-aws-codegirls-2025-santander-dio/blob/main/hands-on/03-IAM/img/07-grupos.png">
+- Adicionar usuário ao grupo -><img width="1407" height="1031" alr="2-cost-alert" src = "https://github.com/BrunaBaria/bootcamp-aws-codegirls-2025-santander-dio/blob/main/hands-on/03-IAM/img/10-certifique.png">
+- acesse a URL gerada e logue com o usuário criado -><img width="1407" height="1031" alr="2-cost-alert" src = "https://github.com/BrunaBaria/bootcamp-aws-codegirls-2025-santander-dio/blob/main/hands-on/03-IAM/img/08-login.png"><img width="1407" height="1031" alr="2-cost-alert" src = "https://github.com/BrunaBaria/bootcamp-aws-codegirls-2025-santander-dio/blob/main/hands-on/03-IAM/img/09-login.png">
 
 obs 1: Caso o usuário esteja sem acessos, certifique-se que o usuário foi realmente atribuido ao grupo com as permissões
 obs 2: habilite o MFA para seus usuários cadastrados, por segurança
