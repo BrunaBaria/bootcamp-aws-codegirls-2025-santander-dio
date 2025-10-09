@@ -13,3 +13,18 @@
  - Em "Criptografia padrão" vamos marcar que as chaves gerenciadas pelo keyvault - KMS;
  - em "chave AWS KMS" -> "escolha entre suas chaves AWS KMS -> selecione a chave visponível;
  - Em "chave do balde" -> "habilitar" -> "criar bucket" -> "bucket criado com sucesso"
+ - Acesse seu bucket -> "Permissões" e escrever um Json com permissões de Read e Get Object:
+   `{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "PublicReadGetObject",
+            "Effect": "Allow",
+            "Principal": "*",
+            "Action": "s3:GetObject",
+            "Resource": "arn:aws:s3:::meubucketdobootcamp/*"
+        }
+    ]
+}
+`
+   
