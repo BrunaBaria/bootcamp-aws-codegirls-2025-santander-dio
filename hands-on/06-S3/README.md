@@ -10,4 +10,6 @@
  - em "Configurações de bloqueio de acesso público para este bucket", por default ele vem todo bloqueado, vamos tirar a marcação de default e marcar as duas útlimas;
  - Em " Controle de Versão de Bucket" - desabilitar. Neste momento não precisamos do versionamento dos conteúdos do bucket;
  - Em "Tags" - não vamos inserir neste momento, mas é uma prática importante para administração do ambiente;
- - Em "Criptografia padrão" 
+ - Em "Criptografia padrão" vamos marcar que as chaves gerenciadas pelo keyvault - KMS;
+ - em "chave AWS KMS" -> "escolha entre suas chaves AWS KMS -> selecione a chave visponível;
+ - Em "chave do balde" -> "habilitar" -> "criar bucket" -> "bucket criado com sucesso"
