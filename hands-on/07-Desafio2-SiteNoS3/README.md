@@ -1,6 +1,6 @@
 # Desafio 2 - Carregar um site dentro de um S3
 
-Nesta etapa do bootcamp, o instrutor disponibilizou um html para fazer upload no S3. Eu optei por utilizar meu próprio htl de portifólio.
+Nesta etapa do bootcamp, o instrutor disponibilizou um HTML de portifólio para fazer upload no S3. Eu optei por utilizar meu próprio HTML.
 
 ## Subindo um site de portifólio no S3
 
@@ -18,9 +18,9 @@ Nesta etapa do bootcamp, o instrutor disponibilizou um html para fazer upload no
         }
     ]
    } 
-
-- Faça o upload de um arquivo de index.html de portifólio.
-- copie a url do index e acesse o site no seu navegador
+<img width="1407" height="1031" alr="2-cost-alert" src = "https://github.com/BrunaBaria/bootcamp-aws-codegirls-2025-santander-dio/blob/main/hands-on/07-S3/img/05-s3.png">
+- Faça o upload de um arquivo de index.html de portifólio.<img width="1407" height="1031" alr="2-cost-alert" src = "https://github.com/BrunaBaria/bootcamp-aws-codegirls-2025-santander-dio/blob/main/hands-on/07-S3/img/06-s3.png">
+- copie a url do index e acesse o site no seu navegador<img width="1407" height="1031" alr="2-cost-alert" src = "https://github.com/BrunaBaria/bootcamp-aws-codegirls-2025-santander-dio/blob/main/hands-on/07-S3/img/07-s3.png"><img width="1407" height="1031" alr="2-cost-alert" src = "https://github.com/BrunaBaria/bootcamp-aws-codegirls-2025-santander-dio/blob/main/hands-on/07-S3/img/08-s3.png">
 
 ## Finalize
 
