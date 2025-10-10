@@ -14,7 +14,7 @@
  - Em "chave do balde" -> "habilitar" -> "criar bucket" -> "bucket criado com sucesso"
  - Acesse seu bucket -> "Permissões" e escrever um Json com permissões de Read e Get Object:
    ```
-      {
+         {
     "Version": "2012-10-17",
     "Statement": [
         {
@@ -25,8 +25,7 @@
             "Resource": "arn:aws:s3:::meubucketdobootcamp/*"
         }
     ]
-}
-```
+} ```
 
 - Fazer upload de um arquivo de index.html de portifólio.
 - copie a url do index e acesse o site no seu navegador
