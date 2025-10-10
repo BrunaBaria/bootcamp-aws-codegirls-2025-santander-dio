@@ -24,7 +24,8 @@
             "Action": "s3:GetObject",
             "Resource": "arn:aws:s3:::meubucketdobootcamp/*"
         }
-    ]} ```
+    ]
+   } 
 
 - Fazer upload de um arquivo de index.html de portifólio.
 - copie a url do index e acesse o site no seu navegador
