@@ -18,9 +18,9 @@ Nesta etapa do bootcamp, o instrutor disponibilizou um HTML de portifólio para 
         }
     ]
    } 
-<img width="1407" height="1031" alr="2-cost-alert" src = "https://github.com/BrunaBaria/bootcamp-aws-codegirls-2025-santander-dio/blob/main/hands-on/07-S3/img/05-s3.png">
-- Faça o upload de um arquivo de index.html de portifólio.<img width="1407" height="1031" alr="2-cost-alert" src = "https://github.com/BrunaBaria/bootcamp-aws-codegirls-2025-santander-dio/blob/main/hands-on/07-S3/img/06-s3.png">
-- copie a url do index e acesse o site no seu navegador<img width="1407" height="1031" alr="2-cost-alert" src = "https://github.com/BrunaBaria/bootcamp-aws-codegirls-2025-santander-dio/blob/main/hands-on/07-S3/img/07-s3.png"><img width="1407" height="1031" alr="2-cost-alert" src = "https://github.com/BrunaBaria/bootcamp-aws-codegirls-2025-santander-dio/blob/main/hands-on/07-S3/img/08-s3.png">
+<img width="1407" height="1031" alr="2-cost-alert" src = "https://github.com/BrunaBaria/bootcamp-aws-codegirls-2025-santander-dio/blob/main/hands-on/07-Desafio2-SiteNoS3/img/05-s3.png">
+- Faça o upload de um arquivo de index.html de portifólio.<img width="1407" height="1031" alr="2-cost-alert" src = "https://github.com/BrunaBaria/bootcamp-aws-codegirls-2025-santander-dio/blob/main/hands-on/07-Desafio2-SiteNoS3/img/06-s3.png">
+- copie a url do index e acesse o site no seu navegador<img width="1407" height="1031" alr="2-cost-alert" src = "https://github.com/BrunaBaria/bootcamp-aws-codegirls-2025-santander-dio/blob/main/hands-on/07-S3/img/07-s3.png"><img width="1407" height="1031" alr="2-cost-alert" src = "https://github.com/BrunaBaria/bootcamp-aws-codegirls-2025-santander-dio/blob/main/hands-on/07-Desafio2-SiteNoS3/img/08-s3.png">
 
 ## Finalize
 
