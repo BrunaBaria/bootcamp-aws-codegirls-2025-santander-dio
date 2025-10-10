@@ -1,6 +1,6 @@
 # Desafio 2 - Carregar um site dentro de um S3
 
-Nesta etapa do bootcamp, o instrutor disponibilizou um HTML de portifólio para fazer upload no S3. Eu optei por utilizar meu próprio HTML.
+Nesta etapa do bootcamp, o instrutor disponibilizou um HTML de portifólio para fazer upload no S3. Eu optei por utilizar [meu próprio HTML](https://github.com/BrunaBaria/portifolio-padrao-aula).
 
 ## Subindo um site de portifólio no S3
 
