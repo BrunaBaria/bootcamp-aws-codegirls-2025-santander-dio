@@ -14,7 +14,7 @@
  - Em "chave do balde" -> "habilitar" -> "criar bucket" -> "bucket criado com sucesso"
  - Acesse seu bucket -> "Permissões" e escrever um Json com permissões de Read e Get Object:
    ```
-         {
+   {
     "Version": "2012-10-17",
     "Statement": [
         {
