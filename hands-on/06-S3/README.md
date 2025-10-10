@@ -2,7 +2,7 @@
  Um S3 é uo equivalente a uma Storage Account no Azure. É utilizado para armazenar objetos. No S3 você cria "buckets"- "baldes" de armazenamento;
 
 ### Pré-requisitos para esta estapa
-- wip
+- nenhum.
  ### Criando seu primeiro Bucket via console
  - Amazon S3 -> Bucket -> Criar bucket
  - Uso geral -> Dê um nome para seu bucket - precisa ser tudo em mínusculo, e devem ser únicos em toda a rede;
